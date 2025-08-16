@@ -76,15 +76,15 @@
 
 /* ////////////////////////////////////////////////////////////////////// */
 
-.bicycle {
-  width: calc((100% + (var(--gap) * 2)) / 3);
-}
-
 .bicycle-container {
   --gap: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   gap: var(--gap);
+}
+
+.bicycle {
+  width: calc((100% - (var(--gap) * 2)) / 3);
 }
 
 .bicycle__img {
