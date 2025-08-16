@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+:root {
+  --root-font-color: #24292e;
+  --root-font-size: 14.4px;
+  --root-content-width-max: 960px;
+  --root-content-width-padding: 4%;
+  color: var(--root-font-color);
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.header {
+  width: 100%;
+}
+
+.header-logo {
+  width: 120px;
+  height: 40px;
+  display: block;
+}
+
+.header-logo__img {
+  width: 100%;
+}
+
+.header-nav {
+}
+
+.header-nav__ul {
+  display: flex;
+  gap: 5px;
+}
+
+.header-nav__li {
+  font-size: var(--root-font-size);
+}
+
+.header-nav__li a {
+  display: block;
+  padding: 8px 12.5px;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+/* .header-nav__li a:hover {
+  text-decoration: underline;
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  .header-nav__li a:hover {
+    background-color: #ededed;
+  }
+}
+
+@media (hover: hover) and (pointer: coarse), (hover: none) {
+  .header-nav__li a:active {
+    background-color: #ededed;
+  }
+}
+
+.header__inner {
+  max-width: var(--root-content-width-max);
+  padding-right: var(--root-content-width-padding);
+  padding-left: var(--root-content-width-padding);
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.main {
+  width: 100%;
+}
+
+.main__inner {
+  width: 100%;
+  max-width: var(--root-content-width-max);
+  padding-right: var(--root-content-width-padding);
+  padding-left: var(--root-content-width-padding);
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.main__section {
+  width: 100%;
+}
+
+.main__section + .main__section {
+  margin-top: 100px;
+}
+
+.main__heading {
+  margin-bottom: 50px;
+}
+
+.heading-sub {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.heading-sub__inner {
+  border-bottom: solid 1px #383e45;
+  padding-bottom: 3px;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.footer {
+  width: 100%;
+}
+
+.footer__inner {
+  width: 100%;
+  max-width: var(--root-content-width-max);
+  padding-right: var(--root-content-width-padding);
+  padding-left: var(--root-content-width-padding);
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.footer-copyright {
+  font-size: 8px;
+  text-align: center;
+}

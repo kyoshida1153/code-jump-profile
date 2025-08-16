@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <meta name="description" content="【HTML/CSS コーディング練習】入門編：プロフィールサイト／1カラム" />
+    <meta property="og:url" content="example.com" />
+    <meta property="og:title" content="Profile" />
+    <meta property="og:site_name" content="Profile" />
+    <meta property="og:description" content="【HTML/CSS コーディング練習】入門編：プロフィールサイト／1カラム" />
+    <meta property="og:image" content="assets/img/mainvisual-1200x630.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="thumbnail" content="assets/img/mainvisual-1200x630.jpg" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/destyle.min.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="./" class="header-logo">
+          <img src="assets/img/logo.svg" alt="Profile" class="header-logo__img" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__ul">
+            <li class="header-nav__li"><a href="#about">About</a></li>
+            <li class="header-nav__li"><a href="#bicycle">Bicycle</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.header__inner -->
+    </header>
+
+    <main class="main">
+      <section class="main-visual">
+        <img src="assets/img/mainvisual.jpg" alt="" class="main-visual__img" />
+      </section>
+
+      <div class="main__inner">
+        <section id="about" class="main__section">
+          <h2 class="heading-sub main__heading"><span class="heading-sub__inner">About</span></h2>
+          <section class="about main__about">
+            <div class="about__img-area">
+              <img src="assets/img/about.jpg" alt="" class="about__img" />
+            </div>
+            <div class="about__info-area">
+              <h3 class="about__name">KAKERU MIYAICHI</h3>
+              <p class="about__description">
+                テキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </section>
+        </section>
+        <section id="bicycle" class="main__section">
+          <h2 class="heading-sub main__heading"><span class="heading-sub__inner">Bicycle</span></h2>
+          <section class="bicycle-container">
+            <section class="bicycle">
+              <img src="assets/img/bicycle1.jpg" alt="" class="bicycle__img" />
+              <h3 class="bicycle__name">タイトルタイトル</h3>
+              <p class="bicycle__description">テキストテキストテキスト</p>
+            </section>
+            <section class="bicycle">
+              <img src="assets/img/bicycle2.jpg" alt="" class="bicycle__img" />
+              <h3 class="bicycle__name">タイトルタイトル</h3>
+              <p class="bicycle__description">テキストテキストテキスト</p>
+            </section>
+            <section class="bicycle">
+              <img src="assets/img/bicycle3.jpg" alt="" class="bicycle__img" />
+              <h3 class="bicycle__name">タイトルタイトル</h3>
+              <p class="bicycle__description">テキストテキストテキスト</p>
+            </section>
+          </section>
+        </section>
+      </div>
+      <!-- /.main__inner -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer-copyright">&copy;2020 Profile</p>
+      </div>
+      <!-- /.footer__inner -->
+    </footer>
+  </body>
+</html>
