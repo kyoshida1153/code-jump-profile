@@ -23,6 +23,10 @@
   display: block;
 }
 
+.header-logo__link {
+  display: block;
+}
+
 .header-logo__img {
   width: 100%;
 }
